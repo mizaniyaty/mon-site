@@ -39,6 +39,24 @@ body {
   max-width: 80px; /* Taille maximale de l'image */
   height: auto;
 }
+/* Par défaut : menu horizontal pour les grands écrans */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Pour les petits écrans : menu vertical */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
 
 nav ul {
   list-style-type: none;
