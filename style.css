@@ -3,6 +3,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
 }
+/* Style général : pour les écrans de PC */
+.menu {
+  display: flex;
+  flex-direction: row; /* Horizontal sur PC */
+  justify-content: space-around;
+}
+
+/* Style spécial : pour les petits écrans (mobile) */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Vertical sur mobile */
+    align-items: center;
+  }
+}
 
 .header {
   isplay: flex;
@@ -38,24 +52,6 @@ body {
   left:90.5%; /* Ajustez selon vos besoins */
   max-width: 80px; /* Taille maximale de l'image */
   height: auto;
-}
-/* Par défaut : menu horizontal pour les grands écrans */
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-}
-
-/* Pour les petits écrans : menu vertical */
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
 }
 
 nav ul {
@@ -330,18 +326,19 @@ background: #0984e3;
   color: inherit;
 }
 
-/* Style général : pour les écrans de PC */
-.menu {
-  display: flex;
-  flex-direction: row; /* Horizontal sur PC */
-  justify-content: space-around;
-}
-
-/* Style spécial : pour les petits écrans (mobile) */
 @media (max-width: 768px) {
-  .menu {
-    flex-direction: column; /* Vertical sur mobile */
-    align-items: center;
-  }
+.menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ff69b4;
 }
 
+.menu-icon {
+  display: block;
+}
+
+#menu-toggle:checked + .menu {
+  display: flex;
+}
+}
