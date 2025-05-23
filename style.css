@@ -1,9 +1,22 @@
 /* style.css */
 @media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
+  body {
+    transform: scale(0.95);
+    transform-origin: top center;
+    overflow-x: hidden;
+  }
+
+  img, .logo, .titre, .boutons {
+    max-width: 100%;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 }
+
 
 body {
     font-family: Arial, sans-serif;
