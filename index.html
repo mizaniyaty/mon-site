@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>MIZZANIYATY HAQQI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <a href="index.html">
-            <img id="image" src="logo2.jpg" alt="Logo" class="logo">
-          </a>
-        
-          <script>
-            let images = ["logo2.jpg", "logo1.jpg"]; // Liste des images
-            let index = 0;
-        
-            setInterval(function() {
-              index = (index + 1) % images.length; // Incrémente l'index pour passer à l'image suivante
-              document.getElementById('image').src = images[index]; // Change l'image
-            }, 5000); // Change l'image toutes les 5 secondes
-          </script>
-             <a href="heart.html">
-                <img href="heart.html" src="person.svg" alt="Lo" class="lo">
-
-             <a href="etoile.html">
-            <img  href="etoile.html" src="star.svg" alt="aa" class="aa">
-
-
-        </a>
-        <nav>
+        <div class="header-logo">
+            <h2 class="logo">Pub<span>AI</span></h2>
+        </div>
+        <nav class="nav">
             <ul>
-              <li><a href="index.html">Accueil</a></li>
-              <li><a href="apropos.html">A propos</a></li>
-              <li><a href="contact.html">Contactez-nous</a></li>
-              <li><a href="loi.html">lois et Règlement</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Nous contacter</a></li>
             </ul>
         </nav>
-
-        
-        <div class="header-text">
-            <h6>MIZZANIYATY  HAQQI</h6>
-            <p>Pour une meilleure compréhension avec une participation plus large</p>
-             <div class="buttons">
-                <a href="aller.html" class="btn-start">Commencez maintenant</a>
-                <a href="plus.html" class="btn-learn">En savoir plus</a>
-            </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="login">Login</a>
+            <a href="register.html" class="register">Register</a>
         </div>
     </header>
 
+    <div class="header-text">
+        <h6>Bienvenue sur PubAI</h6>
+        <p>Créez des publicités innovantes avec l'intelligence artificielle !</p>
+        <div class="buttons">
+            <a href="#" class="btn-start">Commencer</a>
+            <a href="#" class="btn-learn">En savoir plus</a>
+        </div>
+    </div>
 
-    
+    <a href="heart.html">
+        <img src="person.svg" alt="Icône de profil" class="lo">
+    </a>
+    <a href="etoile.html">
+        <img src="star.svg" alt="Icône d’évaluation" class="aa">
+    </a>
+
+    <script>
+        document.querySelector('.btn-start').addEventListener('click', function () {
+            alert("Bienvenue sur PubAI !");
+        });
+    </script>
 </body>
 </html>
-
-
