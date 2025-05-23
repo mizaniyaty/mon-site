@@ -311,20 +311,3 @@ background: #0984e3;
   text-decoration: none;
   color: inherit;
 }
-
-@media (max-width: 768px) {
-.menu {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  background-color: #ff69b4;
-}
-
-.menu-icon {
-  display: block;
-}
-
-#menu-toggle:checked + .menu {
-  display: flex;
-}
-}
