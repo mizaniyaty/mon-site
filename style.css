@@ -329,3 +329,19 @@ background: #0984e3;
   text-decoration: none;
   color: inherit;
 }
+
+/* Style général : pour les écrans de PC */
+.menu {
+  display: flex;
+  flex-direction: row; /* Horizontal sur PC */
+  justify-content: space-around;
+}
+
+/* Style spécial : pour les petits écrans (mobile) */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Vertical sur mobile */
+    align-items: center;
+  }
+}
+
