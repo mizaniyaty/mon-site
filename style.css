@@ -58,10 +58,9 @@ nav ul {
   list-style-type: none;
   margin: 0%;
 
-  background-color: #78e08f;
+  background-color: #ffffff;
   text-align: center;
 }
-
 nav ul li {
   display: inline-block;
 }
@@ -73,7 +72,7 @@ nav ul li a {
   display: block;
   padding:17px 30px;
   text-decoration: none;
-  color: #fff;
+  color: #79f185;
   transition: background-color 0.3s, border 0.3s;
  
 }
